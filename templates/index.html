@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Fusion Byte Tutorial</title>
+    <title>Trends of Olympic Medal Winners</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,16 +45,26 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>The New Data Pipeline Project Fusion Byte Example</h1>
-        <p>This is the Fusion Byte of the Data Pipeline class. This
-        page should explain what question you want to answer and use
-        the visualization tools provided by Google Fusion Table to
-        answer it. </p>
+	<h1>Trends of Olympic Medal Winners</h1>
+        <p>The following plots show the trends of Olympic medal winners of ages, heights and weights. 
+        They use Google Fusion Table for visualization.</p>                           
       </div>
 
 
-<iframe width="500" height="300" scrolling="no" frameborder="no"
-	src="https://www.google.com/fusiontables/embedviz?q=select+col16%3E%3E0+from+1ymz3EtGdi4qKGMl5AxEFXtTlgk3tKi8iCpjTzvM&amp;viz=MAP&amp;h=false&amp;lat=38.071424981566125&amp;lng=-85.15232666015623&amp;t=1&amp;z=9&amp;l=col16%3E%3E0&amp;y=3&amp;tmplt=3&amp;hml=TWO_COL_LAT_LNG"></iframe>
+<h2>Do Olympic medal winners become more and more younger?</h2>
+<h4>Age vs. Year</h4>
+<iframe width="750" height="450" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=LINE_AGGREGATE&amp;isXyPlot=true&amp;bsize=0.0&amp;q=select+col9%2C+col3+from+1RYpzYZavgCONoIFJ9OvdecJRbtepSnYf9tKJGD11+where+col14+in+(&#39;Bronze&#39;%2C+&#39;Gold&#39;%2C+&#39;Silver&#39;)+and+col10+%3D+&#39;Summer&#39;+and+col5+%3E%3D+0+and+col4+%3E%3D+0&amp;qrs=+and+col9+%3E%3D+&amp;qre=+and+col9+%3C%3D+&amp;qe=+order+by+col9+asc&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=750&amp;height=450"></iframe>
+<p>No. Olympic medal winners become older and older.</p>
+
+<h2>Do the heights of Olympic medal winners change over years?</h2>
+<h4>Height vs. Year</h4>
+<iframe width="750" height="450" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=LINE_AGGREGATE&amp;isXyPlot=true&amp;bsize=0.0&amp;q=select+col9%2C+col4+from+1RYpzYZavgCONoIFJ9OvdecJRbtepSnYf9tKJGD11+where+col14+in+(&#39;Bronze&#39;%2C+&#39;Gold&#39;%2C+&#39;Silver&#39;)+and+col10+%3D+&#39;Summer&#39;+and+col5+%3E%3D+0+and+col4+%3E%3D+0&amp;qrs=+and+col9+%3E%3D+&amp;qre=+and+col9+%3C%3D+&amp;qe=+order+by+col9+asc&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=750&amp;height=450"></iframe>
+<p>No. The heights of Olympic medal winners stay relatively unchanged.</p>
+
+<h2>Do the weights of Olympic medal winners change over years?</h2>
+<h4>Weight vs. Year</h4>
+<iframe width="750" height="450" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=LINE_AGGREGATE&amp;isXyPlot=true&amp;bsize=0.0&amp;q=select+col9%2C+col5+from+1RYpzYZavgCONoIFJ9OvdecJRbtepSnYf9tKJGD11+where+col14+in+(&#39;Bronze&#39;%2C+&#39;Gold&#39;%2C+&#39;Silver&#39;)+and+col10+%3D+&#39;Summer&#39;+and+col5+%3E%3D+0+and+col4+%3E%3D+0&amp;qrs=+and+col9+%3E%3D+&amp;qre=+and+col9+%3C%3D+&amp;qe=+order+by+col9+asc&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=750&amp;height=450"></iframe>
+<p>No. The weights of Olympic medal winners stay relatively unchanged.</p>
 
       </div> <!-- /page-header -->
     </div> <!-- /container -->
